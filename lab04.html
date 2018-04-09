@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/Lab04.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Share Your Travels</h1>
+    <p>let us know where you've been</p>
+</header>
+<main>
+<form method="post" action="http://www.randyconnolly.com/tests/process.php">
+    <fieldset>
+        <legend>PHOTO DETAILS</legend>
+        <section>
+        <table>
+           <tr>
+               <td colspan="2">Title
+                <input name="title" type="text" placeholder="Give your photo a descriptive name">
+                <p>Description</p>
+                    <textarea rows="5" placeholder="Adding a rich description will help with search results"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Continent</p>
+                    <select><option>Choose continent</option><option>1</option><option>2</option></select>
+                    <p>Country</p>
+                    <select><option>Choose country</option><option>1</option><option>2</option></select>
+                <p>City</p>
+                <input type="text" name="city">
+                </td>
+                <td><ul class="box">Copyright?<br>
+                    <input type="radio">All rights reserved<br>
+                    <input type="radio" checked>Creative Commons<br>
+                </ul>
+                    <ul class="box">
+                        Creative Commons Types<br>
+                        <input type="checkbox">Attribution<br>
+                    <input type="checkbox">Noncommercial<br>
+                      <input type="checkbox">No Derivative<br>
+                    </ul></td>
+            </tr>
+            <tr class="rectangle">
+                <td colspan="2" >I accept the software license<input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td><p><p>Rate this photo:</p><input type="number"><p>Color Collection:</p><input type="color"></ul></td>
+                <td><ul class="box">
+                    <p>Date Taken:</p>
+                    <input type="date">
+                    <p>Time Taken:</p>
+                    <input type="time"></ul></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="rectangle"><input type="submit" class="rounded"><input type="reset" value="Clear Form" class="rounded"></td>
+            </tr>
+        </table>
+        </section>
+    </fieldset>
+</form>
+</main>
+</body>
+</html>
