@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wth=device-wth, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <div>
+                <h1>
+                    Share Your Travels
+                </h1>
+                <p><i>Let us know where you've been</i></p>
+            </div>
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link text-muted" href="gallery.html">Upload</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted">Related Photos</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="card col">
+    <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+        <h2>Photo Details</h2>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Give your photo a descriptive name">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" rows="5" id="description" placeholder="Adding a rich description will help with search results"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="continent">Continent</label>
+            <select class="form-control" id="continent">
+                <option>Choose continent</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select class="form-control" id="country">
+                <option>Choose country</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city">
+        </div>
+        <div class="form-group">
+            <label>Copyright?</label>
+        <div class="radio">
+            <label><input type="radio" name="optradio">All rights reserved</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>Creative Commons</label>
+        </div>
+        </div>
+        <div class="form-group">
+            <label>Creative Commons Types</label><br>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Attribution
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Noncommercial
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">No Derivative
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">I accept the software license
+            </label>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label>Rate this photo:</label>
+                <input type="number" class="form-control"><br>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <label>Color Collection:</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label>Date Taken:</label>
+                <input type="date" class="form-control"><br>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <label>Time Taken:</label>
+                <input type="time" class="form-control">
+            </div>
+        </div>
+        <div class="btn-group">
+            <input type="submit" class="btn btn-default">
+            <input type="reset" class="btn btn-default" value="Clear Form">
+        </div>
+    </form>
+
+</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

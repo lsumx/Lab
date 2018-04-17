@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wth=device-wth, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="row">
+    <div>
+        <h1>
+            Share Your Travels
+        </h1>
+        <p><i>Let us know where you've been</i></p>
+    </div>
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav ">
+            <li class="nav-item"><a class="nav-link text-muted" href="gallery.html">Upload</a></li>
+            <li class="nav-item"><a class="nav-link text-muted">Related Photos</a></li>
+            <li class="nav-item"><a class="nav-link text-muted">Reviews</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<div class="row">
+    <div class="col-md-9 card">
+        <div class="card-body">
+        <h3 class="card-title">NEW YORK - CENTRAL PARK</h3>
+        <p>Conservatory Pond in Central Park</p>
+        <a href="images/central-park.jpg"><img src="images/central-park.jpg" class="img-responsive img-fluid w-100" alt="central park"></a>
+        <p>This photo of Conservatory Pond in <a href="#"><strong>Central Park</strong></a> in <a  href="#"><strong>New York City</strong></a> was taken on October 22,2016 with a Canon EOS 30D camera</p>
+        <div class="btn-group float-right">
+        <button class="btn btn-default"><img src="images/icon_download.png" alt="download"></button>
+        <button class="btn btn-default"><img src="images/icon_mail.png" alt="mail"></button>
+        <button class="btn btn-default"><img src="images/icon_map.png" alt="map"></button>
+        <button class="btn btn-default"><img src="images/icon_up.png" alt="up"></button>
+        <button class="btn btn-default"><img src="images/icon_down.png" alt="down"></button>
+        </div></div></div>
+    <div class="col-md-3">
+        <div class="card">
+    <div class="card-body">
+        <h3 class="card-title">Related Photos</h3>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="images/related-large1.jpg">
+                    <img class="img-responsive img-fluid w-100" src="images/related-square1.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="images/related-large2.jpg">
+                    <img class="img-responsive img-fluid w-100" src="images/related-square2.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="images/related-large3.jpg">
+                    <img class="img-responsive img-fluid w-100" src="images/related-square3.jpg"></a>
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        </div>
+    </div>
+        <div class="border card">
+            <div class="card-body">
+                <section class="review">
+                    <h3><a name="Reviews">Reviews</a></h3>
+                    <div class="text-center font-italic row">
+                        <div class="btn col-sm-12 col-4" data-target="#comment1" data-toggle="collapse"
+                             aria-expanded="false">
+                            <span class="d-md-block">Ricardo</span>
+                            <span class="d-md-block">
+                                    <span class="badge badge-pill badge-info">
+                                        2016-05-23</span>
+                                </span>
+                        </div>
+                        <div id="comment1" class="collapse col-sm-12 col-8 btn">Easy on the HDR buddy.</div>
+                    </div>
+                    <div class="text-center font-italic row">
+                        <div class="btn col-sm-12 col-3" data-target="#comment2" data-toggle="collapse"
+                             aria-expanded="false">
+                            <span class="d-md-block">Susan</span>
+                            <span class="d-md-block">
+                                    <span class="badge badge-pill badge-info">
+                                         2016-11-18
+                                    </span>
+                                </span>
+                        </div>
+                        <div id="comment2" class="collapse col-sm-12 col-9 btn">I love Central Park.</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="text-center">
+    <P><a class="col-md-3" href="#">Home</a><a class="col-md-4" href="#">Browse</a><a class="col-md-5" href="#">Search</a></P>
+    <i>Copyright &#169 2017 Share Your Travels</i>
+</footer>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
