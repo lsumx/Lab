@@ -7,7 +7,7 @@ const countries = [
 
 const lab = document.getElementsByClassName('flex-container justify')[0];
 for (const i in countries) {
-    lab.innerHTML=lab.innerHTML+'<div class="item"><h2>'+countries[i].name+'</h2><h3>'+countries[i].continent+'</h3><div class="inner-box"><h2 class="cities"></h2><ul></ul></div><div><h2 class="photos"></h2><div class="photoItem"></div></div><div><button></button></div>'
+    lab.innerHTML=lab.innerHTML+'<div class="item"><h2>'+countries[i].name+'</h2><h3>'+countries[i].continent+'</h3><div class="inner-box"><h2 class="cities"></h2><ul></ul></div><div class="inner-box"><h2 class="photos"></h2><div class="photoItem"></div></div><div><button></button></div>'
     document.getElementsByClassName('cities')[i].innerHTML='Cities';
     document.getElementsByClassName('photos')[i].innerHTML='Popular Photos';
     document.getElementsByTagName('button')[i].innerHTML='Visit';
