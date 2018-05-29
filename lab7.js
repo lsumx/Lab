@@ -20,6 +20,33 @@ document.form.table.onchange = function () {
             break;
     }
 };
+function commitCreate() {
+    let colNumInput = document.getElementById("number");
+    let name = document.getElementById("tableName").value;
+    let number = colNumInput.value;
+    let attris = new Array(0);
+    let cols = document.getElementsByClassName("attr");
+    for (let i = 0; i < number; i++) {
+        attris.push(cols[i].value);
+    }
+    let table = new Table(name, number, attris);
+    tables.push(table);
+    newTable(table);
+    let option = document.createElement("option");
+    option.innerText = name;
+    option.selected = true;
+    document.form.chooseTable.appendChild(option);
+}
+
+function commitDelete() {
+    if (document.form.chooseTable.selectedIndex === 0) {
+        return;
+    }
+    tables.splice(document.form.chooseTable.selectedIndex - 1, 1);
+    document.getElementById("divTable").innerHTML = "";
+    document.form.chooseTable.removeChild(document.form.chooseTable.options[document.form.chooseTable.selectedIndex]);
+    document.form.chooseTable.options[0].selected = true;
+}
 function createTable(){
     document.getElementById('div1').style.display='inline-block';
     document.getElementById('div2').innerHTML='';
@@ -71,33 +98,7 @@ function deleteTable() {
     document.getElementsByTagName("button")[0].onclick = commitDelete;
 }
 
-function commitCreate() {
-    let colNumInput = document.getElementById("number");
-    let name = document.getElementById("tableName").value;
-    let number = colNumInput.value;
-    let attris = new Array(0);
-    let cols = document.getElementsByClassName("attr");
-    for (let i = 0; i < number; i++) {
-        attris.push(cols[i].value);
-    }
-    let table = new Table(name, number, attris);
-    tables.push(table);
-    newTable(table);
-    let option = document.createElement("option");
-    option.innerText = name;
-    option.selected = true;
-    document.form.chooseTable.appendChild(option);
-}
 
-function commitDelete() {
-    if (document.form.chooseTable.selectedIndex === 0) {
-        return;
-    }
-    tables.splice(document.form.chooseTable.selectedIndex - 1, 1);
-    document.getElementById("divTable").innerHTML = "";
-    document.form.chooseTable.removeChild(document.form.chooseTable.options[document.form.chooseTable.selectedIndex]);
-    document.form.chooseTable.options[0].selected = true;
-}
 
 function getInputsValues() {
     let list = new Array(0);
